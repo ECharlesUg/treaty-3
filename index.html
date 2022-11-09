@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treaty 3</title>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <style>
+      /*
+      This styles the border of all images with this class to have
+      a color of (75,0,0), a 2px border and a solid line
+      */
+      .treaty-image {
+        border: 2px solid rgb(75, 0, 0);
+      }
+      /*
+        This styles all divs on the web page to have a background color
+        of #ffa0a0, sets the div to width of 1100px, and sets the height 
+        to 180px. This also styles the border to
+        have a width of 2px with a solid black line, rounds the corners of
+        the div to have a radius of 20px, and adds 10px of padding to the
+        top and bottom of the div, as well as 20px of padding on the left
+        and right. Finally, aligns the text center and sets margin to auto.
+      */
+      div {
+        background-color: #ffa0a0;
+        width: 1100px;
+        height: 180px;
+        border: 2px solid rgb(75, 0, 0);
+        border-radius: 20px;
+        padding: 10px 20px;
+        text-align: center;
+        margin: auto;
+      }
+
+      /*
+        This styles all spans on the web page to underline the text inside
+        the span and change the text to be italicized. 
+      */
+      span {
+        text-decoration: underline;
+        font-style: italic;
+      }
+      /*
+        This styles the multiple elements with a class of nav-link to have
+        4px of margin, a 1px border that is a solid reddish line, padding of 5px,
+        a background color of #ffa0a0, and a font color of (122, 29, 29) . 
+      */
+      .nav-link {
+        margin: 4px;
+        border: 1px solid rgb(75, 0, 0);
+        padding: 5px;
+
+        background-color: #ffa0a0;
+        color: rgb(122, 29, 29);
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="reference.html" class="nav-link">References</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Treaty 3</h1>
+
+      <!-- 
+        NOTE: This is NOT the proper way to use a div because I have not used all
+        the proper semantic tags yet.
+
+        This is a div, which is short for division. It is a block element that acts
+        like a container for multiple block elements.
+      -->
+      <div>
+        <p id="styled-by-id">
+          Treaties are agreements made between the government of Canada and
+          indigenous groups
+        </p>
+        <p style="color: rgb(122, 29, 29)">
+          Signed between queen Elizabeth and the Saulteaux tribe of the
+          <b>Ojibbeway</b> at the northwest angle on the lake of the woods in
+          Ontario and eastern Manitoba.
+        </p>
+        <!-- 
+          This demonstrates the use of span, which is an inline element used to
+          group multiple inline elements. It can also be used to style specific
+          words or sets of words inside other HTML elements, which is how it is
+          being used in this context.
+        -->
+        <p style="color: rgb(122, 29, 29)">
+          Treaty 3 was released
+          <span>October 3,1873</span>
+        </p>
+      </div>
+
+      <br />
+      <br />
+
+      <img
+        class="treaty-image"
+        src="https://storynations.utoronto.ca/wp-content/uploads/2018/02/detail-of-G_3401_E1_8870_1961.jpg"
+        width="400px"
+        height="430px"
+        alt="This is a map of treaty 3 that includes all the different regions included treaty 3"
+      />
+      <h2 style="margin-left: 33%">Map</h2>
+
+      <p style="color: black; width: 19%; float: left; margin-left: 1%">
+        Treaty 3 includes large parts of what is now northwestern Ontario and a
+        small part of eastern Manitoba. Communities that share the benefits and
+        obligations of treaty No. 3 include,
+        <b>Falcon Lake, Middlebro, Point du Bois, etc </b>. Most of Whiteshell
+        Provincial Heritage park is within the treaty 3 area as well. Buffalo
+        point first nation was also entered into treaty 3.
+      </p>
+
+      <img
+        class="treaty-image"
+        style="margin-left: 3%"
+        src="https://cdn.britannica.com/53/100653-050-B51E18CF/Lake-of-the-Woods-border-Canadian.jpg"
+        width="776px"
+        height="360px"
+        alt="Picture of the lake of the woods, black shadow trees in the background with a multicolor body of water and clouds"
+      />
+      <p style="color: black; font-size: 17px; text-align: center">
+        <b> The Lake of the Woods</b>
+      </p>
+    </main>
+  </body>
+</html>
