@@ -49,3 +49,16 @@ h2 {
   text-decoration: underline;
   color: #000000;
 }
+/*
+  This styles the multiple elements with a class of nav-link to have
+  4px of margin, a 1px border that is a solid reddish line, padding of 5px,
+  a background color of #ffa0a0, and a font color of (122, 29, 29) . 
+*/
+.nav-link {
+  margin: 4px;
+  border: 1px solid rgb(75, 0, 0);
+  padding: 5px;
+
+  background-color: #ffa0a0;
+  color: rgb(122, 29, 29);
+}
