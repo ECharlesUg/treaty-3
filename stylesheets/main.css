@@ -1,4 +1,8 @@
 /* 
+External styling
+*/
+
+/* 
   This styles the body of the web page to have a background color of #ffdbdb,
   which is white with a hint of red, using the background-color CSS property
   and a font color of #971d1d using the color CSS property.
@@ -20,6 +24,7 @@ h1 {
 /* This styles all p tags to have a font size of 22 px. */
 p {
   font-size: 22px;
+  color: black;
 }
 /*
   This styles the one element with an ID of styled-by-id to use the
@@ -27,10 +32,12 @@ p {
   Roman. If Times New Roman cannot be used, Cambria is used. If Cambria
   cannot be used, the default serif font built into the browser is used.
   It also styles the text to be bolded. 
+  color is #971d1d
 */
 #styled-by-id {
   font-family: Georgia, "Times New Roman", Cambria, serif;
   font-weight: bold;
+  color: #971d1d;
 }
 
 /* 
@@ -61,4 +68,15 @@ h2 {
 
   background-color: #ffa0a0;
   color: rgb(122, 29, 29);
+}
+
+/* 
+  styles nav link to have a margin of  10px
+  font size of 20px
+  and display of inline-block
+*/
+nav li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 20px;
 }
