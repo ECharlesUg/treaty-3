@@ -18,13 +18,6 @@
     <!--Internal styling in webpage-->
     <style>
       /*
-      This styles the border of all images with this class to have
-      a color of (75,0,0), a 2px border and a solid line
-      */
-      .treaty-image {
-        border: 2px solid rgb(75, 0, 0);
-      }
-      /*
         This styles all divs on the web page to have a background color
         of #ffa0a0, sets the div to width of 1100px, and sets the height 
         to 180px. This also styles the border to
@@ -33,15 +26,20 @@
         top and bottom of the div, as well as 20px of padding on the left
         and right. Finally, aligns the text center and sets margin to auto.
       */
-      div {
-        background-color: #ffa0a0;
+      #maintext {
+        background-color: #e6e6e6;
         width: 1100px;
         height: 180px;
-        border: 2px solid rgb(75, 0, 0);
+        border: 3px solid rgb(0, 39, 29);
         border-radius: 20px;
         padding: 10px 20px;
         text-align: center;
         margin: auto;
+      }
+      #color-block {
+        width: 1570px;
+        height: 450px;
+        background-color: #594545;
       }
 
       /*
@@ -58,7 +56,6 @@
     <nav>
       <ul>
         <!--Adds class to style links-->
-        <li><a href="reference.html" class="nav-link">References</a></li>
         <li><a href="index.html" class="nav-link">Home</a></li>
       </ul>
     </nav>
@@ -74,7 +71,7 @@
         This is a div, which is short for division. It is a block element that acts
         like a container for multiple block elements.
       -->
-      <div>
+      <div id="maintext">
         <p id="styled-by-id">
           Treaties are agreements made between the government of Canada and
           indigenous groups
@@ -82,7 +79,7 @@
 
         <!--inline styling of paragraph changes color of text to a dark reddish color
         and bolds a certain word-->
-        <p style="color: rgb(122, 29, 29)">
+        <p style="color: #594545">
           Signed between <b>queen Elizabeth</b> and the
           <b>Saulteaux tribe</b> of the Ojibbeway at the northwest angle on the
           lake of the woods in Ontario and eastern Manitoba.
@@ -95,7 +92,7 @@
           being used in this context.
           inline styling of paragraph changes color of text to a dark reddish color
         -->
-        <p style="color: rgb(122, 29, 29)">
+        <p style="color: #594545">
           Treaty 3 was released
           <span>October 3,1873</span>
         </p>
@@ -103,43 +100,38 @@
 
       <br />
       <br />
-
-      <!--
+      <div id="color-block">
+        <!--
         Adds images unto the webpage
         with a width of 400px
         and a height of 430px
       -->
-      <img
-        class="treaty-image"
-        src="https://storynations.utoronto.ca/wp-content/uploads/2018/02/detail-of-G_3401_E1_8870_1961.jpg"
-        width="400px"
-        height="430px"
-        alt="This is a map of treaty 3 that includes all the different regions included treaty 3"
-      />
+        <img
+          style="margin-top: 50px; margin-left: 30px"
+          class="treaty-image"
+          src="https://storynations.utoronto.ca/wp-content/uploads/2018/02/detail-of-G_3401_E1_8870_1961.jpg"
+          width="360px"
+          height="380px"
+          alt="This is a map of treaty 3 that includes all the different regions included treaty 3"
+        />
 
-      <!--
-        Adds h2 heading called map unto the webpage
-        margin-left moves text to the left
-      -->
-      <h2 style="margin-left: 33%">Map</h2>
-
-      <!--
+        <!--
         Internal styling of paragraph 
         width of 19%
         and margin-left moves text to left 1%
         Inside the paragraph tag, text is bolded
         and float is left
       -->
-      <p style="width: 19%; float: left; margin-left: 1%">
-        Treaty 3 includes large parts of what is now northwestern Ontario and a
-        small part of eastern Manitoba. Communities that share the benefits and
-        obligations of treaty No. 3 include,
-        <b>Falcon Lake, Middlebro, Point du Bois, etc </b>. Most of Whiteshell
-        Provincial Heritage park is within the treaty 3 area as well. Buffalo
-        point first nation was also entered into treaty 3.
-      </p>
+        <p style="width: 19%; float: left; margin-left: 1%; margin-top: 100px">
+          Treaty 3 includes large parts of what is now northwestern Ontario and
+          a small part of eastern Manitoba. Communities that share the benefits
+          and obligations of treaty No. 3 include,
+          <b>Falcon Lake, Middlebro, Point du Bois, etc </b>. Most of Whiteshell
+          Provincial Heritage park is within the treaty 3 area as well. Buffalo
+          point first nation was also entered into treaty 3.
+        </p>
 
-      <!--
+        <!--
         Adds images unto the webpage
         margin-left moves img to the left a bit by 3%
         width of 776px
@@ -147,24 +139,51 @@
         and class of treaty-image to add border styling 
         and alt text describing the image
       -->
-      <img
-        class="treaty-image"
-        style="margin-left: 3%"
-        src="https://cdn.britannica.com/53/100653-050-B51E18CF/Lake-of-the-Woods-border-Canadian.jpg"
-        width="776px"
-        height="360px"
-        alt="Picture of the lake of the woods, black shadow trees in the background with a multicolor body of water and clouds"
-      />
+        <img
+          style="margin-top: 50px; margin-left: 60px"
+          class="treaty-image"
+          style="margin-left: 3%"
+          src="https://cdn.britannica.com/53/100653-050-B51E18CF/Lake-of-the-Woods-border-Canadian.jpg"
+          width="776px"
+          height="360px"
+          alt="Picture of the lake of the woods, black shadow trees in the background with a multicolor body of water and clouds"
+        />
 
-      <!--
+        <!--
         Internal styling of paragraph 
         font size of 17px
         and text-align to center
         Inside the paragraph tag, text is bolded
       -->
-      <p style="font-size: 17px; text-align: center">
-        <b> The Lake of the Woods</b>
-      </p>
+        <p style="font-size: 17px; margin-left: 1070px">
+          <b>The Lake of the Woods</b>
+        </p>
+      </div>
     </main>
+    <footer style="text-align: center; color: rgb(0, 39, 29)">
+      <h3>References</h3>
+      - Province of Manitoba | News Releases | Province, Treaty #3 First Nations
+      Sign Agreement To Strengthen Working Relationship (gov.mb.ca)
+
+      <br />
+
+      - Treaty Texts - Treaty No 3 (rcaanc-cirnac.gc.ca)
+
+      <br />
+
+      - Treaties and agreements (rcaanc-cirnac.gc.ca)
+
+      <br />
+
+      -Treaty 3 - Wikipedia
+
+      <br />
+
+      - Our Nation - Grand Council Treaty #3 (gct3.ca)
+
+      <br />
+
+      - Treaty 3 | The Canadian Encyclopedia
+    </footer>
   </body>
 </html>

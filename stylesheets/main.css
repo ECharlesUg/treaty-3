@@ -8,7 +8,7 @@ External styling
   and a font color of #971d1d using the color CSS property.
 */
 body {
-  background-color: #ffdbdb;
+  background-color: #f8f8f8;
   color: #971d1d;
 }
 
@@ -19,12 +19,16 @@ h1 {
   text-align: center;
   font-size: 40px;
   text-decoration: underline;
+  color: #815b5b;
+  font-family: serif;
 }
 
 /* This styles all p tags to have a font size of 22 px. */
 p {
-  font-size: 22px;
-  color: black;
+  font-size: 21px;
+  color: #000000;
+  font-family: sans-serif;
+  line-height: 25px;
 }
 /*
   This styles the one element with an ID of styled-by-id to use the
@@ -37,7 +41,7 @@ p {
 #styled-by-id {
   font-family: Georgia, "Times New Roman", Cambria, serif;
   font-weight: bold;
-  color: #971d1d;
+  color: #594545;
 }
 
 /* 
@@ -46,16 +50,9 @@ p {
 
 img {
   float: left;
+  border: 2px solid rgb(0, 75, 56);
 }
-/* 
-  This styles all h2 tags to have a font size of 28px,
-  all h2 tags to be underlined and have a color of black
-*/
-h2 {
-  font-size: 28px;
-  text-decoration: underline;
-  color: #000000;
-}
+
 /*
   This styles the multiple elements with a class of nav-link to have
   4px of margin, a 1px border that is a solid reddish line, padding of 5px,
@@ -63,11 +60,11 @@ h2 {
 */
 .nav-link {
   margin: 4px;
-  border: 1px solid rgb(75, 0, 0);
+  border: 2px solid #594545;
   padding: 5px;
 
-  background-color: #ffa0a0;
-  color: rgb(122, 29, 29);
+  background-color: #e6e6e6;
+  color: #594545;
 }
 
 /* 
@@ -79,4 +76,11 @@ nav li {
   display: inline-block;
   margin: 10px;
   font-size: 20px;
+}
+/*
+This styles the border of all images with this class to have
+a color of (75,0,0), a 2px border and a solid line
+*/
+.treaty-image {
+  border: 3px solid rgb(0, 49, 37);
 }
