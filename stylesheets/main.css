@@ -12,7 +12,7 @@ body {
 
 /*
   This styles all h1 tags to be center aligned and have a font size of 40 px and have a text decoration of underline
-  a font colour of #815b5b, and a font family of sans-serif.
+  a font colour of #815b5b, and a font family of sans-serif, franklin goth medium and arial narrow.
 */
 h1 {
   text-align: center;
@@ -48,7 +48,7 @@ p {
 
 img {
   float: left;
-  border: 2px solid rgb(0, 75, 56);
+  border: 3px solid rgb(0, 49, 37);
 }
 
 /*
@@ -78,10 +78,10 @@ nav li {
   margin: 10px;
   font-size: 20px;
 }
-/*
-This styles the border of all images with this class to have
-a color of (0,49,37), a 3px border and a solid line
-*/
-.treaty-image {
-  border: 3px solid rgb(0, 49, 37);
+
+.nav a:focus {
+  color: rgb(255, 189, 127);
+}
+.nav a:visited {
+  color: aquamarine;
 }
