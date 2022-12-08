@@ -17,14 +17,17 @@
 
     <!--Internal styling in webpage-->
     <style>
-      /* Styles the block of color on webpagwe to have a width of 570px
-      and a height of 700px, as well as a background colour of #594545 */
+      /* 
+        Styles the elements with an id of color-square to have a width of 800px
+        and a height of 860px, as well as a background colour of #594545
+      */
       #color-square {
         width: 800px;
-        height: 900px;
+        height: 860px;
         background-color: #594545;
       }
 
+      /* Styles all elements with a class of reference to have a font colour of rgb(0, 49, 37) and a font ize of 17px */
       .reference {
         color: rgb(0, 49, 37);
         font-size: 17px;
@@ -32,33 +35,42 @@
     </style>
   </head>
   <body>
-    <nav>
-      <ul>
-        <!--Adds class to style links-->
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="association.html" class="nav-link">Association</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <ul>
+          <!--Adds class to style links-->
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="association.html" class="nav-link">Association</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-      <!--Adds h1 unto the website,
-      biggest heading possible-->
-      <h1 style="margin-right: 1500px">Association</h1>
+      <!--Adds biggest heading possible called Associatuon unto the website-->
+      <h1>Association</h1>
 
+      <!--section tag has an id of color-square and has a styling of float: left-->
       <section id="color-square" style="float: left">
         <!--
-        Internal styling of paragraph 
-        and margin-left is 840px
-        width of 700px
-        has a bold style id called reference
+          Has a margin-top of 100px and  margin left of 10px
+          height of 700px
+          width of 770px
+          and an alt text describing the image
         -->
         <img
-          style="margin-top: 10px; margin-right: 700px"
+          style="margin-top: 100px; margin-left: 10px"
           src="http://gct3.ca/wp-content/uploads/2022/05/Treaty3_Area_Map.jpg"
-          width="700px"
-          height="320px"
-          alt=""
+          width="770px"
+          height="700px"
+          alt="image of Anishinaabe nation in treaty #3 and all the communities and landmarks including"
         />
       </section>
+
+      <!--
+        Internal styling of paragraphs
+        and margin-left is 840px
+        width of 700px
+        has a class called reference
+      -->
       <p style="margin-left: 840px; width: 700px">
         Communities that share in the benefits and obligations of Treaty No. 3
         include, Falcon Lake, Middlebro, Point du Bois, etc. Much of Whiteshell
