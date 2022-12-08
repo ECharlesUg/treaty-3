@@ -11,8 +11,14 @@ body {
 }
 
 /*
-  This styles all h1 tags to be center aligned and have a font size of 40 px and have a text decoration of underline
-  a font colour of #815b5b, and a font family of sans-serif, franklin goth medium and arial narrow.
+  This styles all h1 tags to be center aligned and have a font size 
+  of 40 px and have a text decoration of underline
+  a font colour of #815b5b, and a font that uses frankiln goth
+  eedium before arial narrow, and then uses arial after, and 
+  if neither fonts are available the it uses the default sans-serif.
+  has a text shadow that has a color of #121212 and a horizontal offset 2px,
+  vertical offset of 0px
+  and 1px blur.
 */
 h1 {
   text-align: center;
@@ -20,6 +26,7 @@ h1 {
   text-decoration: underline;
   color: #815b5b;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: #000000 2px 0px 1px;
 }
 
 /* This styles all p tags to have a font size of 21 px. color of #000000, font family of sasn-serif and a line-height of 25px */
@@ -29,21 +36,10 @@ p {
   font-family: sans-serif;
   line-height: 25px;
 }
-/*
-  This styles the one element with an ID of styled-by-id to use the
-  sans-serif font.
-  It also styles the text to be bolded. 
-  color is #594545
-*/
-#styled-by-id {
-  font-family: sans-serif;
-  font-weight: bold;
-  color: #594545;
-}
 
 /* 
   This styles all image tags to automatically be formatted to the left of the tag it comes after
-  and have a solid border of 2px and a colour of rgb(0, 75, 56).
+  and have a solid border of 2px and a colour of rgb(0, 49, 537).
 */
 
 img {
@@ -65,23 +61,34 @@ img {
   font-size: 17px;
 
   background-color: #e6e6e6;
-  color: #594545;
+  color: #463636;
 }
 
 /* 
-  styles nav link to have a margin of  10px
+  styles nav link to have a margin of  14px
   font size of 20px
   and display of inline-block
 */
 nav li {
   display: inline-block;
-  margin: 10px;
+  margin: 14px;
   font-size: 20px;
 }
 
-.nav a:focus {
-  color: rgb(255, 189, 127);
+/* This styles the anchor elelemtn in the nav so that when a user hovers
+on or tabs to the links, the color of the anchor swap out. This means
+the background color will be an off-white and the font color will be a dark grey */
+nav a:hover,
+nav a:focus {
+  background-color: #ededed;
+  color: #121212;
 }
-.nav a:visited {
-  color: aquamarine;
+
+/* 
+  This styles the nav to have  abackground color of
+  rgb( 0, 49, 37) which is a dark green and a height of  50px 
+*/
+nav {
+  background-color: rgb(0, 49, 37);
+  height: 50px;
 }
