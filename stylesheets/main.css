@@ -2,6 +2,12 @@
 External styling
 */
 
+html {
+  scroll-behavior: smooth;
+
+  font-size: 130%;
+}
+
 /* 
   This styles the body of the web page to have a background color of #f8f8f8,
   which is white with a hint of grey, using the background-color CSS property
@@ -14,7 +20,7 @@ body {
   This styles all h1 tags to be center aligned and have a font size 
   of 40 px and have a text decoration of underline to underline the text
   a font colour of #815b5b, and a font that uses frankiln goth
-  eedium before arial narrow, and then uses arial after, and 
+  medium before arial narrow, and then uses arial after, and 
   if neither fonts are available the it uses the default sans-serif.
   
 */
@@ -28,10 +34,9 @@ h1 {
 
 /* This styles all p tags to have a font size of 21 px. color of #000000, font family of sasn-serif and a line-height of 25px */
 p {
-  font-size: 21px;
   color: #000000;
   font-family: sans-serif;
-  line-height: 25px;
+  line-height: 120%;
 }
 
 /* 
