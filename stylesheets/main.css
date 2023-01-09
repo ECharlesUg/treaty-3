@@ -1,3 +1,21 @@
+/*
+  The colour theory i chose was green, grey and brown
+  green represents nature and i feel it relates to the 
+  treaty and indegenousbecause the indegenous was all about 
+  respecting and appreciating nature.
+
+  grey represents balance and i felt that was to represent the
+  treaty because the treaty wascreated to represent some kind of
+  equality between the indegenous and colonizers.
+
+  brown was the last colour i chose because, brown represents comfort
+  and seeing as what the indegenous went through and what the treaty 
+  represents.The treaty acts as kind of a safety for the indegenous 
+  and creates security and comfort for them, knowing they have at least 
+  some type of documents giving them the necessitioes thed esreve and their rights
+  on the land stolen from them.
+*/
+
 /* 
 External styling
 */
@@ -5,7 +23,7 @@ External styling
 html {
   scroll-behavior: smooth;
 
-  font-size: 130%;
+  font-size: 62.5%;
 }
 
 /* 
@@ -14,6 +32,8 @@ html {
 */
 body {
   background-color: #f8f8f8;
+
+  font-size: 2.1rem;
 }
 
 /*
@@ -32,7 +52,7 @@ h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-/* This styles all p tags to have a font size of 21 px. color of #000000, font family of sasn-serif and a line-height of 25px */
+/* This styles all p tags to have a font size of 21 px. color of #000000, font family of sasn-serif and a line-height of 120% */
 p {
   color: #000000;
   font-family: sans-serif;
