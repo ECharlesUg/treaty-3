@@ -20,12 +20,15 @@
     <style>
       /* 
         Styles the elements with an id of color-square to have a width of 800px
-        and a height of 860px, as well as a background colour of #594545
+        and a height of 860px, as well as a background colour of lightblue,
+        with a border color of light orange
       */
-      #color-square {
+      #color-group {
         width: 800px;
         height: 860px;
-        background-color: #594545;
+        background-color: #94ccdd;
+        border: 5px solid #f8975e;
+        float: right;
       }
 
       /* 
@@ -61,21 +64,80 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <h1>More Information</h1>
+      <p style="text-align: center">
+        <i>
+          This web page contents related information to all treaties not just
+          treaty 3. As well as links to outside Information
+        </i>
+      </p>
+      <section>
+        <div id="color-group">
+          <h2>Five Facts about Treaties</h2>
+
+          <!--
+            This lists things in order and the type=1 element
+            makes the lts go in numerical order starting from one to
+            five, because i have 5 <li> tags listed
+          -->
+          <ol type="1">
+            <li>
+              The first Nation to Nation treaty was signed on August 4, 1701.
+              The “Great Peace of Montreal” was a peace treaty between New
+              France and 40 First Nations of North America. The Great Peace of
+              Montreal was made between Louis-Hector de Callière, Governor of
+              New France, and 1300 representatives of 40 Aboriginal nations
+            </li>
+
+            <br />
+
+            <li>
+              Many of the early treaties are described by the First Nations as
+              “Peace and Friendship Treaties”
+            </li>
+
+            <br />
+            <li>
+              Between 1760 and 1923, the British Crown signed 56 land treaties
+              with Aboriginal Peoples
+            </li>
+
+            <br />
+
+            <li>
+              As Aboriginal Peoples were strictly an oral tradition they were
+              unable to read over the documents they signed; there may also have
+              been a language barrier between the Agents of the Crown and the
+              First Nation
+            </li>
+
+            <br />
+
+            <li>No two treaties are the same</li>
+          </ol>
+        </div>
+      </section>
+      <a href="https://www.ictinc.ca/blog/10-treaty-facts" target="_blank"
+        >Link to get more facts about treaties</a
+      >
+      <iframe
+        src="https://www.ictinc.ca/blog/10-treaty-facts"
+        width="730px"
+        height="500px"
+        style="justify-content: center; margin: auto"
+      >
+        ></iframe
+      >
+    </main>
 
     <!--
-      This inline styling styles footer to have a text align of center
-      a colour of #594545
+      This inline styling styles footer to have a text align of center  
       font-family of sans-serif
       and font size of 14px
     -->
     <footer
-      style="
-        text-align: center;
-        color: #594545;
-        font-family: sans-serif;
-        font-size: 18px;
-      "
+      style="text-align: center; font-family: sans-serif; font-size: 18px"
     >
       <p>&#169; Emmanuella Charles-Ugbechie</p>
     </footer>

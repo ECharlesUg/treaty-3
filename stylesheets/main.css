@@ -1,25 +1,35 @@
 /*
-  The colour theory i chose was green, grey and brown
-  green represents nature and i feel it relates to the 
-  treaty and indegenousbecause the indegenous was all about 
-  respecting and appreciating nature.
+  The colour theory i chose was blue, grey and orange
+  blue represents peace and calmness, and i want
+  my website to give off a welcoming vibe to users.
 
   grey represents balance and i felt that was to represent the
   treaty because the treaty wascreated to represent some kind of
   equality between the indegenous and colonizers.
 
-  brown was the last colour i chose because, brown represents comfort
-  and seeing as what the indegenous went through and what the treaty 
-  represents.The treaty acts as kind of a safety for the indegenous 
-  and creates security and comfort for them, knowing they have at least 
-  some type of documents giving them the necessitioes thed esreve and their rights
-  on the land stolen from them.
+  orange was the last color i chose because it represent fun and playfulness and i want my 
+  readers using this website to feel at ease when looking through the different web pages.
 */
 
 /* 
 External styling
 */
 
+/* 
+  This styles all p tags to have a font size of 21 px. color
+   of #000000, font family of sasn-serif and a line-height of 120%
+  and a letter-spacing of normal
+*/
+p {
+  color: #000000;
+  font-family: sans-serif;
+  line-height: 120%;
+  letter-spacing: normal;
+}
+
+/* 
+  styles scrolling ot be smooth and to have a font size of 62.5%
+*/
 html {
   scroll-behavior: smooth;
 
@@ -29,6 +39,7 @@ html {
 /* 
   This styles the body of the web page to have a background color of #ffe8d9
   which is white with a hint of grey, using the background-color CSS property
+  and to have a font-size of 2.1rem
 */
 body {
   background-color: #ffe8d9;
@@ -38,30 +49,39 @@ body {
 
 /*
   This styles all h1 tags to be center aligned and have a font size 
-  of 40 px and have a text decoration of underline to underline the text
-  a font colour of #815b5b, and a font that uses frankiln goth
+  of 40 px, a font colour of black, and a font that uses frankiln goth
   medium before arial narrow, and then uses arial after, and 
-  if neither fonts are available the it uses the default sans-serif.
-  
+  if neither fonts are available the it uses the default sans-serif. 
 */
 h1 {
   text-align: center;
   font-size: 40px;
-  text-decoration: underline;
-  color: #815b5b;
+  color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-/* This styles all p tags to have a font size of 21 px. color of #000000, font family of sasn-serif and a line-height of 120% */
-p {
-  color: #000000;
-  font-family: sans-serif;
-  line-height: 120%;
+a {
+  color: red;
+}
+
+/*
+  This styles all h2 tags to be center aligned and have a font size 
+  of 32 px, a font colour of black, and a font that uses frankiln goth
+  medium before arial narrow, and then uses arial after, and 
+  if neither fonts are available the it uses the default sans-serif.
+  as well as a text decoraton of underline to underline th heading.
+*/
+h2 {
+  text-align: center;
+  font-size: 32px;
+  color: black;
+  text-decoration: underline;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 /* 
   This styles all image tags to automatically be formatted to the left of the tag it comes after
-  and have a solid border of 3px and a colour of #265350.
+  and have a solid border of 3px and a colour of #f8975e which is a light orange.
 */
 
 img {
@@ -71,13 +91,13 @@ img {
 
 /*
   This styles the multiple elements with a class of nav-link to have
-  4px of margin, a 2px border that has a color of #f8975e, padding of 5px,
-  a background color of #ffe8d9, and a font color of black,
+  4px of margin, a 2px border that has a color of #94ccdd a light blue, padding of 5px,
+  a background color of #ffe8d9 an off white, and a font color of black,
   a font family of sans-serif and font size of 17px. 
 */
 .nav-link {
   margin: 4px;
-  border: 2px solid #f8975e;
+  border: 2px solid #94ccdd;
   padding: 5px;
   font-family: sans-serif;
   font-size: 17px;
@@ -98,21 +118,21 @@ nav li {
 }
 
 /* 
-  This styles the nav to have  abackground color of
-  #265350 which is a dark green and a height of  50px 
+  This styles the nav to have  a background color of
+  #f8975e, which is a light orange and a height of  50px 
 */
 nav {
-  background-color: #265350;
+  background-color: #f8975e;
   height: 50px;
 }
 
 /* 
-  This styles the anchor elelemtn in the nav so that when a user hovers
+  This styles the anchor element in the nav so that when a user hovers
   on or tabs to the links, the color of the anchor swap out. This means
-  the background color will be #ffa774e, a light orange and the font color will be a dark green of #265350
+  the background color will be #c0f0ff, a light blue and the font color will be black
 */
 nav a:hover,
 nav a:focus {
-  background-color: #ffa774;
-  color: #265350;
+  background-color: #c0f0ff;
+  color: black;
 }
