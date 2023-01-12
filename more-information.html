@@ -18,34 +18,54 @@
 
     <!--Internal styling in webpage-->
     <style>
-      /* 
-        Styles the elements with an id of color-square to have a width of 800px
-        and a height of 860px, as well as a background colour of lightblue,
-        with a border color of light orange
-      */
+      body {
+        /*
+            creates how page will look like before animation occurs
+            body will be completely transparent and shifted up 100px
+            */
+        opacity: 0;
+        transform: translateY(-100px);
+
+        /*
+              will slowly start the animation and fade in for 1 second and speed up to the end
+              and the animation delay has been put to delay for 2 second
+              the animation fill is put as fowards to keep styling at end of animation
+            */
+        -o-animation: fade-in 1s ease-in 2s forwards;
+        -moz-animation: fade-in 1s ease-in 2s forwards;
+        -webkit-animation: fade-in 1s ease-in 2s forwards;
+        animation: fade-in 1s ease-in 2s forwards;
+      }
+
+      /*
+          this shows the animation movement and the "from" bracket shows
+          the original page before the animtion while the to brakcet
+          shows what the page looks like after the animation, after the animation the
+          opcaity is 1 which means its visible and it has been shifted back to its original porition
+          which is why the translateY is 0
+          */
+      @keyframes fade-in {
+        from {
+          opacity: 0;
+          transform: translateY(-100px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      /*
+            Styles the elements with an id of color-square to have a width of 800px
+            and a height of 550px, as well as a background colour of light blue,
+            with a border color of light orange and have a padding of auto
+          */
       #color-group {
         width: 800px;
-        height: 860px;
+        height: 550px;
         background-color: #94ccdd;
         border: 5px solid #f8975e;
         float: right;
-      }
-
-      /* 
-        Styles all elements with a class of reference to have a font colour of rgb(0, 49, 37) and a font ize of 17px 
-      */
-      .reference {
-        color: rgb(0, 49, 37);
-        font-size: 20px;
-      }
-
-      /* 
-        Styles all elements with a class of margin-style to have a margin left of 840px
-        and a width of 700px
-      */
-      .margin-style {
-        margin-left: 840px;
-        width: 700px;
+        padding: auto;
       }
     </style>
   </head>
@@ -73,14 +93,13 @@
         </i>
       </p>
       <section>
-        <div id="color-group">
+        <div id="color-group" class="mouse-effect">
           <h2>Five Facts about Treaties</h2>
-
           <!--
-            This lists things in order and the type=1 element
-            makes the lts go in numerical order starting from one to
-            five, because i have 5 <li> tags listed
-          -->
+        This lists things in order and the type=1 element
+        makes the lts go in numerical order starting from one to
+        five, because i have 5 <li> tags listed
+      -->
           <ol type="1">
             <li>
               The first Nation to Nation treaty was signed on August 4, 1701.
@@ -116,19 +135,24 @@
 
             <li>No two treaties are the same</li>
           </ol>
+
+          <a
+            href="https://www.ictinc.ca/blog/10-treaty-facts"
+            target="_blank"
+            style="margin-left: 240px"
+            >Link to get more facts about treaties
+          </a>
         </div>
       </section>
-      <a href="https://www.ictinc.ca/blog/10-treaty-facts" target="_blank"
-        >Link to get more facts about treaties</a
-      >
       <iframe
         src="https://www.ictinc.ca/blog/10-treaty-facts"
         width="730px"
-        height="500px"
-        style="justify-content: center; margin: auto"
+        height="560px"
+        style="justify-content: center; margin-left: 10px"
+        alt="shows the working with indegenous blog website that gives more information on ten facts about treaties "
+        frameborder="0"
       >
-        ></iframe
-      >
+      </iframe>
     </main>
 
     <!--

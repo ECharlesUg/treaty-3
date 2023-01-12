@@ -16,24 +16,37 @@ External styling
 */
 
 /* 
-  This styles all p tags to have a font size of 21 px. color
-   of #000000, font family of sasn-serif and a line-height of 120%
+  This styles all p tags to have a color
+  of #121212, font family of sans-serif and a line-height of 140%
   and a letter-spacing of normal
 */
 p {
-  color: #000000;
+  color: #121212;
   font-family: sans-serif;
-  line-height: 120%;
+  line-height: 140%;
   letter-spacing: normal;
+}
+
+/*
+  sets default font for all ordered list to
+  have a marging of 20px and have white space of normal
+*/
+ol {
+  margin: 20px;
+
+  white-space: normal;
 }
 
 /* 
   styles scrolling ot be smooth and to have a font size of 62.5%
+  and to have a font family of sans-serif
 */
 html {
   scroll-behavior: smooth;
 
   font-size: 62.5%;
+
+  font-family: sans-serif;
 }
 
 /* 
@@ -49,14 +62,14 @@ body {
 
 /*
   This styles all h1 tags to be center aligned and have a font size 
-  of 40 px, a font colour of black, and a font that uses frankiln goth
+  of 40 px, a font colour of dark grey, and a font that uses frankiln goth
   medium before arial narrow, and then uses arial after, and 
   if neither fonts are available the it uses the default sans-serif. 
 */
 h1 {
   text-align: center;
   font-size: 40px;
-  color: black;
+  color: #121212;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -66,7 +79,7 @@ a {
 
 /*
   This styles all h2 tags to be center aligned and have a font size 
-  of 32 px, a font colour of black, and a font that uses frankiln goth
+  of 32 px, a font colour of dark grey, and a font that uses frankiln goth
   medium before arial narrow, and then uses arial after, and 
   if neither fonts are available the it uses the default sans-serif.
   as well as a text decoraton of underline to underline th heading.
@@ -74,25 +87,24 @@ a {
 h2 {
   text-align: center;
   font-size: 32px;
-  color: black;
+  color: #121212;
   text-decoration: underline;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 /* 
   This styles all image tags to automatically be formatted to the left of the tag it comes after
-  and have a solid border of 3px and a colour of #f8975e which is a light orange.
+  and to set position of all images to static, the default position
 */
-
 img {
   float: left;
-  border: 3px solid #f8975e;
+  position: static;
 }
 
 /*
   This styles the multiple elements with a class of nav-link to have
   4px of margin, a 2px border that has a color of #94ccdd a light blue, padding of 5px,
-  a background color of #ffe8d9 an off white, and a font color of black,
+  a background color of #ffe8d9 an off white, and a font color of dark grey,
   a font family of sans-serif and font size of 17px. 
 */
 .nav-link {
@@ -103,7 +115,17 @@ img {
   font-size: 17px;
 
   background-color: #ffe8d9;
-  color: black;
+  color: #121212;
+
+  /* 
+    This styles the transition of when the ser hovers over links
+    for the background color and font color to come in smoothlt
+    which is what the ease-in-out code is or, after 0.5 sec
+  */
+  -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  -webkit-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
 /* 
@@ -129,10 +151,10 @@ nav {
 /* 
   This styles the anchor element in the nav so that when a user hovers
   on or tabs to the links, the color of the anchor swap out. This means
-  the background color will be #c0f0ff, a light blue and the font color will be black
+  the background color will be #c0f0ff, a light blue and the font color will be dark grey
 */
 nav a:hover,
 nav a:focus {
   background-color: #c0f0ff;
-  color: black;
+  color: #121212;
 }
