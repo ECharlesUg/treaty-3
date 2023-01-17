@@ -3,7 +3,7 @@
   Web Development
   Mr.Hardman
   Pembina Trails Early College
-  11/10/2022
+  1/17/2023
 -->
 
 <!DOCTYPE html>
@@ -20,17 +20,20 @@
     <style>
       body {
         /*
-            creates how page will look like before animation occurs
-            body will be completely transparent and shifted up 100px
-            */
+          creates how page will look like before animation occurs
+          body will be completely transparent and shifted up 100px
+          and has a background size of contain to make the image rendered
+          at the largest size possible contained within the background position area
+        */
         opacity: 0;
         transform: translateY(-100px);
+        background-size: contain;
 
         /*
-              will slowly start the animation and fade in for 1 second and speed up to the end
-              and the animation delay has been put to delay for 2 second
-              the animation fill is put as fowards to keep styling at end of animation
-            */
+          will slowly start the animation and fade in for 1 second and speed up to the end
+          and the animation delay has been put to delay for 2 second
+          the animation fill is put as fowards to keep styling at end of animation
+        */
         -o-animation: fade-in 1s ease-in 2s forwards;
         -moz-animation: fade-in 1s ease-in 2s forwards;
         -webkit-animation: fade-in 1s ease-in 2s forwards;
@@ -38,12 +41,12 @@
       }
 
       /*
-          this shows the animation movement and the "from" bracket shows
-          the original page before the animtion while the to brakcet
-          shows what the page looks like after the animation, after the animation the
-          opcaity is 1 which means its visible and it has been shifted back to its original porition
-          which is why the translateY is 0
-          */
+        this shows the animation movement and the "from" bracket shows
+        the original page before the animtion while the to brakcet
+        shows what the page looks like after the animation, after the animation the
+        opcaity is 1 which means its visible and it has been shifted back to its original porition
+        which is why the translateY is 0
+      */
       @keyframes fade-in {
         from {
           opacity: 0;
@@ -54,18 +57,89 @@
           transform: translateY(0);
         }
       }
+
       /*
-            Styles the elements with an id of color-square to have a width of 800px
-            and a height of 550px, as well as a background colour of light blue,
-            with a border color of light orange and have a padding of auto
-          */
+        Styles the elements with an id of color-square to have a width of 730px
+        and a height of 570px,with a 5px solid border color of light blue and a 
+        background color of light orange as well, has a padding of auto
+        and use margin-right to move it to the left(facing me) by 20px
+        and uses float: right to move div to left(facing me)
+      */
       #color-group {
-        width: 800px;
+        width: 730px;
+        height: 570px;
+        background-color: #f8975e;
+        border: 5px solid #94ccdd;
+        margin-right: 20px;
+        float: right;
+        padding: auto;
+      }
+
+      /*
+        Styles the elements with an id of block-style to have a width of 730px
+        and a height of 550px, as well as a background colour of light blue, 
+        and a 5px solid border of color light blue and has a padding of auto 
+        and use margin-left to move it to the right(facing me) by 10px
+      */
+      #block-style {
+        width: 730px;
         height: 550px;
         background-color: #94ccdd;
         border: 5px solid #f8975e;
-        float: right;
+        margin-left: 10px;
         padding: auto;
+      }
+
+      /* animation not covered in class */
+      /* 
+        animation was gotten from https://codepen.io/katzkode/pen/WRjwZR 
+        (i edited code a bit to fit into my website)
+      */
+
+      /* 
+        this id sets the border of animation box to be position fixed
+        which means it stays in same place even when page scrolls and gives it
+        a width of 800px, moves box up by giving it a bottom of 30px and 
+        moves box to right by giving it a left of 400px and a height of auto 
+      */
+      #svg-wrapper {
+        position: fixed;
+        align-content: center;
+
+        bottom: 30px;
+        left: 400px;
+        width: 800px;
+        height: auto;
+      }
+
+      /* 
+        this id styles the box size when user hovers over it
+        when user hovers over it box is restyles to have a width of 780px,
+        and to make the movement of change of width when hovered smooth, it 
+        has a transition width of 0.1s, so it takes 0.1s for styling of width to change
+        when hovered over it and has a -webkit-transition of width 0.1s
+      */
+      #svg-wrapper:hover {
+        width: 780px;
+        transition: width 0.1s;
+        -webkit-transition: width 0.1s;
+        /* Safari */
+      }
+
+      /* 
+        styles the text inside border to have a line height of 50px
+        and align the text to the center og the box and gives the box a 
+        solid border of 1 px 
+      */
+      .toggle-animation {
+        line-height: 50px;
+        text-align: center;
+        border: solid 1px;
+      }
+
+      /* styles elements with class of highlight to have a color of light orange*/
+      .highlight {
+        color: #f8975e;
       }
     </style>
   </head>
@@ -85,41 +159,52 @@
       </nav>
     </header>
     <main>
+      <!--defines heading on webpage-->
       <h1>More Information</h1>
+
+      <!--
+        inine styling of p tag to move text to center of webpage
+        and has a styling tag of <i> inside p tag to italicize text
+      -->
       <p style="text-align: center">
         <i>
-          This web page contents related information to all treaties not just
-          treaty 3. As well as links to outside Information
+          This web page contains related information to all treaties not just
+          treaty 3. As well as links to outside sources
         </i>
       </p>
+
+      <br />
+
       <section>
-        <div id="color-group" class="mouse-effect">
+        <!--uses id to styles specific div-->
+        <div id="color-group">
           <h2>Five Facts about Treaties</h2>
+
           <!--
-        This lists things in order and the type=1 element
-        makes the lts go in numerical order starting from one to
-        five, because i have 5 <li> tags listed
-      -->
+            This lists things in order and the type=1 element
+            makes the lists go in numerical order starting from one to
+            five, because i have 5 <li> tags listed
+          -->
           <ol type="1">
             <li>
               The first Nation to Nation treaty was signed on August 4, 1701.
               The “Great Peace of Montreal” was a peace treaty between New
               France and 40 First Nations of North America. The Great Peace of
               Montreal was made between Louis-Hector de Callière, Governor of
-              New France, and 1300 representatives of 40 Aboriginal nations
+              New France, and 1300 representatives of 40 Aboriginal nations.
             </li>
 
             <br />
 
             <li>
               Many of the early treaties are described by the First Nations as
-              “Peace and Friendship Treaties”
+              “Peace and Friendship Treaties”.
             </li>
 
             <br />
             <li>
               Between 1760 and 1923, the British Crown signed 56 land treaties
-              with Aboriginal Peoples
+              with Aboriginal Peoples.
             </li>
 
             <br />
@@ -128,37 +213,173 @@
               As Aboriginal Peoples were strictly an oral tradition they were
               unable to read over the documents they signed; there may also have
               been a language barrier between the Agents of the Crown and the
-              First Nation
+              First Nation.
             </li>
 
             <br />
 
-            <li>No two treaties are the same</li>
+            <li>No two treaties are the same.</li>
           </ol>
 
+          <!--
+            adds link unto webpage to link external website
+            target_blank opens link when clicked in a seperate tab
+            and has an inline styling of margin-left to move link to 
+            the right(facing me) by 210px
+          -->
           <a
             href="https://www.ictinc.ca/blog/10-treaty-facts"
             target="_blank"
-            style="margin-left: 240px"
+            style="margin-left: 210px"
             >Link to get more facts about treaties
           </a>
         </div>
       </section>
+
+      <!--
+        styles iframe to have a width of 750px, a height of 560px
+        an inline styling of margin-left to move iframe to right(facing me) by 10px
+        and a frameborder of zero which removes the frame
+        and an alt text describing what the iframe is about which addds
+        a website talking about treaty relationships.
+      -->
       <iframe
-        src="https://www.ictinc.ca/blog/10-treaty-facts"
-        width="730px"
+        src="https://www.youtube.com/embed/bSwCmJ30LPM"
+        width="750px"
         height="560px"
-        style="justify-content: center; margin-left: 10px"
-        alt="shows the working with indegenous blog website that gives more information on ten facts about treaties "
+        style="margin-left: 10px"
+        alt="shows video talking about treaty relationships from a combination of 
+        three books called the handshake and the pips, the Friendship and we are all treaty people "
         frameborder="0"
       >
       </iframe>
+
+      <!--
+        link to youtube video and has an inline styling of
+        margin left to move link to right by 10px and a font-size of 17px
+        and uses target=_blank to opes link in a seperate tab when clicked
+        and has a text decoration of bold inside a tag to bold link
+      -->
+      <a
+        href="https://www.youtube.com/watch?v=bSwCmJ30LPM"
+        target="_blank"
+        style="margin-left: 10px; font-size: 17px"
+      >
+        <b>Link to youtube video above</b>
+      </a>
+
+      <!--create breaklines betweeen each code-->
+      <br />
+      <br />
+
+      <!--has an inline syling of display inline block and has a width of 40%-->
+      <figure style="display: inline-block; width: 40%">
+        <!--
+          adds image unto webpage and has a width of 760px and 
+          an alt text describing the image as well as a solid border
+          with a width of 5 px and a color of light blue
+        -->
+        <img
+          src="https://canadashistory.ca/getmedia/82502d95-d521-45ba-9d28-2f15e56e55f5/ExpSetNumberedTreatiesMap768x511.jpg.aspx?width=768&height=511&ext=.jpg"
+          width="760px"
+          alt="a map containing the numbered treaties and were they are located highlighted in red"
+          style="border: 5px solid #94ccdd"
+        />
+
+        <!--
+          inline styling bold tag, a font size of 17px, 
+          a width of 100% and display inline-block and 
+          has a text align to align text to center
+        -->
+        <figcaption>
+          <b
+            style="
+              font-size: 17px;
+              display: inline-block;
+              width: 100%;
+              text-align: center;
+            "
+            >numbered treaties on the map</b
+          >
+        </figcaption>
+      </figure>
+
+      <!--
+        styles section to display inline block,
+        have a width of 45% of the page, a margin left to move text
+        to the right by 140px and a margin bottom to move text up by 90px
+      -->
+      <section
+        style="
+          display: inline-block;
+          width: 45%;
+          margin-left: 140px;
+          margin-bottom: 90px;
+        "
+      >
+        <!--
+          p tag has text decoratin tag of bold to higlight little details
+          and bold tag has class of higlight to give styling to specific elements
+        -->
+        <p>
+          The Numbered Treaties were a series of 11 treaties made between the
+          Crown and First Nations from <b class="highlight"> 1871 to 1921</b>.
+          The Numbered Treaties cover the area between the Lake of the Woods
+          <b class="highlight">(northern Ontario, southern Manitoba)</b> to the
+          Rocky Mountains<b class="highlight">
+            (northeastern British Columbia and interior Plains of Alberta)</b
+          >
+          to the Beaufort Sea
+          <b class="highlight"
+            >(north of Yukon and the Northwest Territories).</b
+          >
+
+          <br />
+          <br />
+
+          Treaties continue to be the foundation upon which First Nations and
+          their fellow Canadians enjoy the benefits and responsibilities of
+          living in Canada. All Manitobans benefit from the Treaty relationship,
+          although there are misconceptions that only First Nations are
+          beneficiaries at times. For example, Canada gained peaceful access to
+          <b class="highlight"
+            >lands for settlement, farming, railways, and development</b
+          >
+          through Treaties.
+
+          <br />
+          <br />
+
+          Access to these areas led to peaceful settlement in the west with
+          minimal costs for westward growth and prevented costly wars with First
+          Nations peoples. Treaties also protected western lands by creating a
+          barrier to American expansion.
+        </p>
+      </section>
+
+      <br />
+      <br />
+      <br />
+
+      <!--
+        adds specific styling and animation to link through the 2 ids and one class
+        links to external website for more information.
+      -->
+      <a
+        class="toggle-animation"
+        id="svg-wrapper"
+        id="svg-wrapper:hover"
+        href="https://trcm.ca/"
+        target="_blank"
+        style="display: block"
+      >
+        Extra Information about Treaties and Indegenous History - website source
+      </a>
     </main>
 
     <!--
       This inline styling styles footer to have a text align of center  
-      font-family of sans-serif
-      and font size of 14px
+      font-family of sans-serif and font size of 18px
     -->
     <footer
       style="text-align: center; font-family: sans-serif; font-size: 18px"

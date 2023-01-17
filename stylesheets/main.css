@@ -73,6 +73,7 @@ h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+/* styles all a tags that link websites to have a font color of red */
 a {
   color: red;
 }
@@ -82,13 +83,16 @@ a {
   of 32 px, a font colour of dark grey, and a font that uses frankiln goth
   medium before arial narrow, and then uses arial after, and 
   if neither fonts are available the it uses the default sans-serif.
-  as well as a text decoraton of underline to underline th heading.
+  as well as a text decoraton of underline dotted using webkit and moz to make the styling
+  stay consistent across other platforms like apple, chrome, safari , firefox e.t.c.
 */
 h2 {
   text-align: center;
   font-size: 32px;
   color: #121212;
-  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  -moz-text-decoration: underline dotted;
+  text-decoration: underline dotted;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
@@ -119,7 +123,7 @@ img {
 
   /* 
     This styles the transition of when the ser hovers over links
-    for the background color and font color to come in smoothlt
+    for the background color and font color to come in smoothly
     which is what the ease-in-out code is or, after 0.5 sec
   */
   -o-transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
@@ -142,10 +146,19 @@ nav li {
 /* 
   This styles the nav to have  a background color of
   #f8975e, which is a light orange and a height of  50px 
+  adds a background gradient color of different shades of orange
+  and uses o, moz and webkit to make styling consistent across
+  other platforms like, firefox, chrome, safari, apple, opera and internet explorer
+  these are just a few of the platforms.
 */
 nav {
   background-color: #f8975e;
   height: 50px;
+
+  background-color: linear-gradient(#ff5e00, #d18f59, #cc6723);
+  background: -o-linear-gradient(60deg, #ff5e00, #d18f59, #cc6723);
+  background: -moz-linear-gradient(60deg, #ff5e00, #d18f59, #cc6723);
+  background: -webkit-linear-gradient(60deg, #ff5e00, #d18f59, #cc6723);
 }
 
 /* 
