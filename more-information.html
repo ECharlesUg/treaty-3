@@ -42,8 +42,9 @@
 
       /*
         this shows the animation movement and the "from" bracket shows
-        the original page before the animtion while the to brakcet
-        shows what the page looks like after the animation, after the animation the
+        the original page before the animtion, which is a blank screen which is why opaacity is zero
+        and has a translateY of -100 which shifts styling and up to where it is not visisble.
+        The to brakcet shows what the page looks like after the animation, after the animation the
         opcaity is 1 which means its visible and it has been shifted back to its original porition
         which is why the translateY is 0
       */
@@ -83,8 +84,8 @@
 
       /* 
         this id sets the border of animation box to be position fixed
-        which means it stays in same place even when page scrolls and gives it
-        a width of 800px, moves box up by giving it a bottom of 30px and 
+        which means it stays in same place even when page scrolls, aligns the content
+        to the center of web page and gives it a width of 800px, moves box up by giving it a bottom of 30px and 
         moves box to right by giving it a left of 400px and a height of auto 
       */
       #svg-wrapper {
@@ -131,9 +132,9 @@
           <li><a href="index.html" class="nav-link">Home</a></li>
           <li><a href="association.html" class="nav-link">Association</a></li>
           <li>
-            <a href="more-information.html" class="nav-link"
-              >More Information</a
-            >
+            <a href="more-information.html" class="nav-link">
+              More Information
+            </a>
           </li>
         </ul>
       </nav>
