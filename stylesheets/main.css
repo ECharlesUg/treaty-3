@@ -172,7 +172,7 @@ nav a:focus {
   color: #121212;
 }
 
-/* styles elements with class of highlight to have a color of light orange*/
+/* styles elements with span tag to have a color of light orange*/
 span {
   color: #ff8b48;
 }
